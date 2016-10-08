@@ -13,11 +13,11 @@ lithos-luminous.zip:
 	@echo "Lithos lithos-luminous: https://minecraft.curseforge.com/projects/lithos-luminous-32x-add-on"
 
 brick.zip:
-	wget -q http://download2008.mediafire.com/442w36kcdwng/z1bfa0qn33b24sz/%5B32x32%5DFaithful+Dirty+Bricks+V1.0+For+MC+1.10.zip -O brick.zip
+	wget -q http://download2008.mediafire.com/8lm4j96g3xkg/z1bfa0qn33b24sz/%5B32x32%5DFaithful+Dirty+Bricks+V1.0+For+MC+1.10.zip -O brick.zip
 	@echo "Dirty Bricks homepage: http://www.minecraftforum.net/forums/mapping-and-modding/resource-packs/2727785-dirty-bricks-resource-pack-adds-8-random-dirty"
 
 redstone.zip:
-	wget -q https://minecraft.curseforge.com/projects/redstone-dust-power-level-display-3d-models-64px/files/latest -O redstone.zip 
+	wget -q https://minecraft.curseforge.com/projects/redstone-dust-power-level-display-3d-models-64px/files/2322557/download -O redstone.zip
 	@echo "Redstone Power levels homepage: https://minecraft.curseforge.com/projects/redstone-dust-power-level-display-3d-models-64px"
 	
 download: faithful.zip lithos.zip brick.zip redstone.zip lithos-luminous.zip
