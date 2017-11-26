@@ -1,12 +1,12 @@
 
 
 faithful.zip:
-	wget -q 'https://minecraft.curseforge.com/projects/faithful-1-11/files/latest' -O faithful.zip
-	@echo "Faitful homepage: https://minecraft.curseforge.com/projects/faithful-1-11"
+	wget -q 'https://minecraft.curseforge.com/projects/faithful-32x/files/latest' -O faithful.zip
+	@echo "Faitful homepage: https://minecraft.curseforge.com/projects/faithful-32x"
 
 lithos.zip:
-	wget -q https://minecraft.curseforge.com/projects/lithos-core-32x-1-6-1-10-complete/files/latest -O lithos.zip
-	@echo "Lithos Core homepage: https://minecraft.curseforge.com/projects/lithos-core-32x-1-6-1-10-complete"
+	wget -q https://minecraft.curseforge.com/projects/lithos-core-32x-1-6-1-11-complete/files/latest -O lithos.zip
+	@echo "Lithos Core homepage: https://minecraft.curseforge.com/projects/lithos-core-32x-1-6-1-11-complete"
 
 lithos-luminous.zip:
 	wget -q https://minecraft.curseforge.com/projects/lithos-luminous-32x-add-on/files/latest -O lithos-luminous.zip
@@ -53,13 +53,13 @@ pack: clear_pack unpack
 	rm -f ZardozPack/readme* credits_meri-the-lapisdemon.txt
 	cp zardoz.png ZardozPack/pack.png
 	cp readme.txt pack.mcmeta ZardozPack
-	cd ZardozPack && zip -r "../Zardoz 1.11.zip" *
+	cd ZardozPack && zip -r "../Zardoz 1.12.zip" *
 
 install: pack
-	cp "Zardoz 1.11.zip" ~/.minecraft/resourcepacks/
+	cp "Zardoz 1.12.zip" ~/.minecraft/resourcepacks/
 
 clear: 
 	rm -f faithful.zip lithos.zip brick.zip redstone.zip lithos-luminous.zip
 	rm -rf faithful lithos brick redstone lithos-luminous 
 	rm -rf ZardozPack
-	rm -f "Zardoz 1.11.zip"
+	rm -f "Zardoz 1.12.zip"
